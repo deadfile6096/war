@@ -1,0 +1,14 @@
+This project is built using HTML, CSS, and JavaScript.
+
+No specific package installations are required.
+
+To run this project, you need a modern web browser that supports:
+- HTML5
+- CSS3 (including Flexbox and Grid)
+- JavaScript (ES6+ features)
+
+Recommended Browsers:
+- Google Chrome (latest version)
+- Mozilla Firefox (latest version)
+- Microsoft Edge (latest version)
+- Safari (latest version)

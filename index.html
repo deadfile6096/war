@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Race</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon Configuration -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/icons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/icons/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/icons/safari-pinned-tab.svg" color="#5bbad5"> <!-- Update color if needed -->
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c"> <!-- Update color if needed -->
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff"> <!-- Update color if needed -->
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1 class="site-title">Alpha Race</h1>
+            <h1 class="main-header-title">Who's Got the Power to Pump?</h1>
+            <a href="https://x.com/alpharace_sol?s=11" class="social-icon-link twitter-link" aria-label="Twitter Profile" target="_blank">
+                <img src="img/twitter-logo.png" alt="Twitter Profile" class="social-icon-image">
+            </a>
+        </header>
+
+        <main class="main-content">
+            <div class="platforms-grid">
+                <!-- PumpFun Column -->
+                <div class="platform-card" id="pumpfun">
+                    <div class="platform-header">
+                        <!-- TODO: Insert PumpFun SVG Logo Here -->
+                        <img src="img/PUMPFUN.jpg" alt="PumpFun Logo" class="platform-logo">
+                        <h2>PumpFun</h2>
+                    </div>
+                    <div class="platform-stats">
+                        <p><strong>Tokens Launched (24h):</strong> <span class="data-value tokens-stat">21,700</span> (57%)</p>
+                        <p><strong>Total Volume (24h):</strong> <span class="data-value volume-stat">$15.5M</span></p>
+                    </div>
+                    <div class="mini-chart-container">
+                        <div class="svg-chart-wrapper">
+                            <svg class="mini-svg-chart tokens-chart" viewBox="0 0 100 40" preserveAspectRatio="none">
+                                <path d="M0,40 Q50,40 100,40 Z"></path>
+                            </svg>
+                            <span class="chart-label">Tokens</span>
+                            <span class="chart-value-display tokens-value-display"></span>
+                        </div>
+                        <div class="svg-chart-wrapper">
+                            <svg class="mini-svg-chart volume-chart" viewBox="0 0 100 40" preserveAspectRatio="none">
+                                <path d="M0,40 Q50,40 100,40 Z"></path>
+                            </svg>
+                            <span class="chart-label">Volume</span>
+                            <span class="chart-value-display volume-value-display"></span>
+                        </div>
+                    </div>
+                    <div class="platform-description">
+                        <p>The Wild West of Token Launches.</p>
+                    </div>
+                    <div class="platform-hidden-details" style="display: none;">
+                        <h4>Description:</h4>
+                        <p>Leading in token launches and volume. Known for rapid, high-risk/reward opportunities.</p>
+                        <h4>Technology:</h4>
+                        <p>Solana blockchain, instant token creation via Telegram bot or web UI.</p>
+                        <h4>Strengths:</h4>
+                        <p>Highest volume, largest number of launches, extremely fast-paced.</p>
+                        <h4>Tech Stack:</h4>
+                        <p>Solana, Rust, WebSockets, Telegram API.</p>
+                    </div>
+                    <div class="trending-tokens">
+                        <h3>Trending Tokens:</h3>
+                        <ul>
+                            <li><img src="image/pumpfun/merica.webp" alt="merica" class="token-icon">merica <span class="token-change positive">+152%</span></li>
+                            <li><img src="image/pumpfun/XBT.webp" alt="XBT" class="token-icon">XBT <span class="token-change negative">-12%</span></li>
+                            <li><img src="image/pumpfun/Yakiu.webp" alt="Yakiu" class="token-icon">Yakiu <span class="token-change positive">+78%</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- LetsBONK Column -->
+                <div class="platform-card" id="letsbonk">
+                    <div class="platform-header">
+                        <!-- TODO: Insert LetsBONK SVG Logo Here -->
+                        <img src="img/bonk.jpg" alt="LetsBONK Logo" class="platform-logo">
+                        <h2>LetsBONK</h2>
+                    </div>
+                    <div class="platform-stats">
+                        <p><strong>Tokens Launched (24h):</strong> <span class="data-value tokens-stat">6,800</span> (18%)</p>
+                        <p><strong>Total Volume (24h):</strong> <span class="data-value volume-stat">$5.2M</span></p>
+                    </div>
+                    <div class="mini-chart-container">
+                        <div class="svg-chart-wrapper">
+                            <svg class="mini-svg-chart tokens-chart" viewBox="0 0 100 40" preserveAspectRatio="none">
+                                <path d="M0,40 Q50,40 100,40 Z"></path>
+                            </svg>
+                            <span class="chart-label">Tokens</span>
+                            <span class="chart-value-display tokens-value-display"></span>
+                        </div>
+                        <div class="svg-chart-wrapper">
+                            <svg class="mini-svg-chart volume-chart" viewBox="0 0 100 40" preserveAspectRatio="none">
+                                <path d="M0,40 Q50,40 100,40 Z"></path>
+                            </svg>
+                            <span class="chart-label">Volume</span>
+                            <span class="chart-value-display volume-value-display"></span>
+                        </div>
+                    </div>
+                    <div class="platform-description">
+                        <p>Community-Focused Meme Coin Hub.</p>
+                    </div>
+                    <div class="platform-hidden-details" style="display: none;">
+                        <h4>Description:</h4>
+                        <p>Community-centric, popular for meme coins. Offers moderate volume and engagement.</p>
+                        <h4>Technology:</h4>
+                        <p>Built on Solana, emphasizing fair launch mechanics and community governance.</p>
+                        <h4>Strengths:</h4>
+                        <p>Strong community engagement, good for meme coins, growing ecosystem.</p>
+                        <h4>Tech Stack:</h4>
+                        <p>Solana, Next.js, Vercel, various community tools.</p>
+                    </div>
+                    <div class="trending-tokens">
+                        <h3>Trending Tokens:</h3>
+                        <ul>
+                            <li><img src="image/letsbonk/CLICK.webp" alt="CLICK" class="token-icon">CLICK <span class="token-change positive">+280%</span></li>
+                            <li><img src="image/letsbonk/BotiPay.webp" alt="BotiPay" class="token-icon">BotiPay <span class="token-change positive">+45%</span></li>
+                            <li><img src="image/letsbonk/FEW.webp" alt="FEW" class="token-icon">FEW <span class="token-change negative">-5%</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Believe Column -->
+                <div class="platform-card" id="believe">
+                    <div class="platform-header">
+                        <!-- TODO: Insert Believe SVG Logo Here -->
+                        <img src="img/believe.jpg" alt="Believe Logo" class="platform-logo">
+                        <h2>Believe</h2>
+                    </div>
+                    <div class="platform-stats">
+                        <p><strong>Tokens Launched (24h):</strong> <span class="data-value tokens-stat">4,900</span> (13%)</p>
+                        <p><strong>Total Volume (24h):</strong> <span class="data-value volume-stat">$3.1M</span></p>
+                    </div>
+                    <div class="mini-chart-container">
+                        <div class="svg-chart-wrapper">
+                            <svg class="mini-svg-chart tokens-chart" viewBox="0 0 100 40" preserveAspectRatio="none">
+                                <path d="M0,40 Q50,40 100,40 Z"></path>
+                            </svg>
+                            <span class="chart-label">Tokens</span>
+                            <span class="chart-value-display tokens-value-display"></span>
+                        </div>
+                        <div class="svg-chart-wrapper">
+                            <svg class="mini-svg-chart volume-chart" viewBox="0 0 100 40" preserveAspectRatio="none">
+                                <path d="M0,40 Q50,40 100,40 Z"></path>
+                            </svg>
+                            <span class="chart-label">Volume</span>
+                            <span class="chart-value-display volume-value-display"></span>
+                        </div>
+                    </div>
+                    <div class="platform-description">
+                        <p>Empowering Creators in Web3.</p>
+                    </div>
+                    <div class="platform-hidden-details" style="display: none;">
+                        <h4>Description:</h4>
+                        <p>Focuses on creator benefits and high transaction activity. Growing ecosystem.</p>
+                        <h4>Technology:</h4>
+                        <p>Custom Layer 2 solution on Ethereum, focusing on low gas fees and creator royalties.</p>
+                        <h4>Strengths:</h4>
+                        <p>Creator-centric, strong revenue sharing, high transaction throughput for its class.</p>
+                        <h4>Tech Stack:</h4>
+                        <p>Ethereum (L2), Solidity, React, Node.js.</p>
+                    </div>
+                    <div class="trending-tokens">
+                        <h3>Trending Tokens:</h3>
+                        <ul>
+                            <li><img src="image/believe/FARTSIGHT.webp" alt="FARTSIGHT" class="token-icon">FARTSIGHT <span class="token-change positive">+99%</span></li>
+                            <li><img src="image/believe/Cloon.webp" alt="CLOON" class="token-icon">CLOON <span class="token-change negative">-22%</span></li>
+                            <li><img src="image/believe/CORXS.webp" alt="CORXS" class="token-icon">CORXS <span class="token-change positive">+120%</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="sidebar">
+                <div class="voting-section">
+                    <h3>Who is winning today?</h3>
+                    <div class="vote-option">
+                        <span>PumpFun:</span>
+                        <span id="pumpfun-votes-percent">50%</span> (<span id="pumpfun-votes-count">50</span> votes)
+                        <div class="vote-bar-container"><div class="vote-bar" id="pumpfun-vote-bar" style="width: 50%;"></div></div>
+                        <button class="vote-button" data-platform="pumpfun">Vote PumpFun</button>
+                    </div>
+                    <div class="vote-option">
+                        <span>LetsBONK:</span>
+                        <span id="letsbonk-votes-percent">30%</span> (<span id="letsbonk-votes-count">30</span> votes)
+                        <div class="vote-bar-container"><div class="vote-bar" id="letsbonk-vote-bar" style="width: 30%;"></div></div>
+                        <button class="vote-button" data-platform="letsbonk">Vote LetsBONK</button>
+                    </div>
+                    <div class="vote-option">
+                        <span>Believe:</span>
+                        <span id="believe-votes-percent">20%</span> (<span id="believe-votes-count">20</span> votes)
+                        <div class="vote-bar-container"><div class="vote-bar" id="believe-vote-bar" style="width: 20%;"></div></div>
+                        <button class="vote-button" data-platform="believe">Vote Believe</button>
+                    </div>
+                    <p class="total-votes">Total Votes: <span id="total-votes-count">100</span></p>
+                </div>
+            </aside>
+        </main>
+
+        <footer class="dashboard-footer">
+            <p>Data as of the last 24 hours. Total tokens launched across platforms: 37,800.</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Modal Structure -->
+    <div id="platformModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-header">
+                <!-- SVG Logo will be injected here by JS -->
+                <div id="modalLogoContainer"></div> 
+                <h2 id="modalPlatformName"></h2>
+            </div>
+            <div id="modalPlatformDetails" class="modal-details-content">
+                <!-- Detailed content will be injected here by JS -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
